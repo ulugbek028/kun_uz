@@ -1,0 +1,28 @@
+### create articleType
+POST localhost:8081/article
+Content-Type: application/json
+
+{
+  "order_number": 2,
+  "nameUz": "Maqola",
+  "nameEn": "Article",
+  "nameRu": "Статья"
+}
+
+### update articletype
+PUT localhost:8081/article/5
+Content-Type: application/json
+
+{
+  "order_number": 8,
+  "nameUz": "Toshkent",
+  "nameEn": "Tashkent",
+  "nameRu": "Ташкент"
+}
+
+### delete by id
+DELETE localhost:8081/article/5
+
+### getAll
+GET localhost:8081/article/getAll
+Content-Type: application/json

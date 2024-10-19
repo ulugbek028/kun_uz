@@ -1,0 +1,28 @@
+### create
+POST localhost:8081/region
+Content-Type: application/json
+
+{
+  "order_number": 19,
+  "name_uz": "Navoiy",
+  "name_en": "Navoi",
+  "name_ru": "Навоий"
+}
+
+### update
+PUT localhost:8081/region/22
+Content-Type: application/json
+
+{
+  "order_number": 78,
+  "name_uz": "Buxoro",
+  "name_en": "Navoi",
+  "name_ru": "Навоий"
+}
+
+### delete
+DELETE localhost:8081/region/19
+
+### getAll
+GET localhost:8081/region/getAll
+Content-Type: application/json

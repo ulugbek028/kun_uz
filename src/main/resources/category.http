@@ -1,0 +1,28 @@
+### create
+POST localhost:8081/category
+Content-Type: application/json
+
+{
+  "order_number": 2,
+  "name_uz": "O`zbekiston2",
+  "name_en": "Uzbekistan",
+  "name_ru": "ЎЗБЕКИСТОН"
+}
+
+### uodate
+PUT localhost:8081/category/2
+Content-Type: application/json
+
+{
+  "order_number": 3,
+  "name_uz": "O`zbekiston_update",
+  "name_en": "Uzbekistan",
+  "name_ru": "ЎЗБЕКИСТОН"
+}
+
+### delate bu id
+DELETE localhost:8081/category/2
+
+### getAll
+GET localhost:8081/category/getAll
+Content-Type: application/json
