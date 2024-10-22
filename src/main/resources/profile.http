@@ -1,0 +1,31 @@
+### create
+POST localhost:8081/profile
+Content-Type: application/json
+
+{
+  "name": "Ali",
+  "surname": "Aliyev",
+  "email": "alialiyev@gmail.com",
+  "password": "alialiyev"
+}
+
+### update (admin)
+PUT localhost:8081/profile/alialiyev@gmail.com
+Content-Type: application/json
+
+### update value (user)
+PUT localhost:8081/profile/update/alialiyev@gmail.com
+Content-Type: application/json
+
+{
+  "name": "Vali",
+  "surname": "Valiyev",
+  "email": "valivaliyev@gmail.com",
+  "password": "valivaliyev"
+}
+
+### getAll
+GET localhost:8081/profile/getAll
+
+
+

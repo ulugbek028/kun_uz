@@ -1,0 +1,12 @@
+### create
+POST localhost:8081/articlies
+Content-Type: application/json
+
+{
+  "title": "Ob-havo",
+  "description": "bugungi ob havo ma`lumotlari",
+  "content": "123456",
+  "image_id": "image_id",
+  "region_id": 1,
+  "category_id": 1
+}

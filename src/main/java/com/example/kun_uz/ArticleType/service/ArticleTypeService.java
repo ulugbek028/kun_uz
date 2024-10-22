@@ -48,7 +48,7 @@ public class ArticleTypeService {
 
     public void delete(Integer id) {
         ArticleTypeEntity dto = articleTypeRepository.getById(id);
-        dto.setVisible(false);
+        dto.setVisible(Boolean.FALSE);
         articleTypeRepository.save(dto);
     }
 
