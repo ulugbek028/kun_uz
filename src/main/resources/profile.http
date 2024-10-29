@@ -26,6 +26,26 @@ Content-Type: application/json
 
 ### getAll
 GET localhost:8081/profile/getAll
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwic3ViIjoiKzk5ODk5MDQzMDY0MCIsImlhdCI6MTczMDIwMDY4NywiZXhwIjoxNzMwMjg3MDg3fQ.KlZ7w7NO9_AaO1z6KPtamO06E4U0HdD8gL3nmXeK4nc
 
+
+
+
+
+
+
+
+#### create
+#POST localhost:8081/profile/registration
+#Content-Type: application/json
+#
+#{
+#  "name": "Ali",
+#  "surname": "Aliyev",
+#  "email": "ulugbeksamadov007@gmail.com",
+#  "password": "123456"
+#}
+
+###
 
 

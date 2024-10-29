@@ -1,0 +1,5 @@
+### getByEmail
+GET localhost:8081/emailHistory/email/
+Content-Type: application/json
+
+

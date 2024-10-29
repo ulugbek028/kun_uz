@@ -1,0 +1,49 @@
+### Auth Register
+POST notify.eskiz.uz/api/auth/login
+Content-Type: application/json
+Authorization: Bearer
+
+{
+  "email": "zaxriddinov1707@gmail.com",
+  "password": "zpEMWldp8DjzGGBoEz8vZvNPxyb8IuisGMVYllVN"
+}
+
+### eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzI2OTE1MTUsImlhdCI6MTczMDA5OTUxNSwicm9sZSI6InRlc3QiLCJzaWduIjoiMDg4YjVkYmI5NDBmOTQxMDc4OWYzMjcwZGE5ZDVhODk5ZDA4OTA3NGVhNTViNzM4NDA2ZTY3NDE1YzlmMDZkZSIsInN1YiI6Ijg3OTIifQ.I8K7gBTSIv6hUfoE3KoD6mqftYNYikSi3y2_TxI-vmo
+POST notify.eskiz.uz/api/message/sms/send
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzI2OTE1MTUsImlhdCI6MTczMDA5OTUxNSwicm9sZSI6InRlc3QiLCJzaWduIjoiMDg4YjVkYmI5NDBmOTQxMDc4OWYzMjcwZGE5ZDVhODk5ZDA4OTA3NGVhNTViNzM4NDA2ZTY3NDE1YzlmMDZkZSIsInN1YiI6Ijg3OTIifQ.I8K7gBTSIv6hUfoE3KoD6mqftYNYikSi3y2_TxI-vmo
+
+{
+  "mobile_phone": "9989",
+  "message": "This is test from Eskiz",
+  "from": "4546"
+}
+
+### Auth User
+POST localhost:8081/auth/registration
+Content-Type: application/json
+
+{
+  "email": "+998990430640",
+  "surname": "Samadov",
+  "password": "654321",
+  "name": "Ulug`bek"
+}
+
+### Confirm
+POST localhost:8081/auth/registration/sms/confirm
+Content-Type: application/json
+
+{
+  "phone": "+998990430640",
+  "code": 55002
+}
+
+### login
+POST localhost:8081/auth/login
+Content-Type: application/json
+
+{
+  "email": "+998990430640",
+  "password": "654321"
+}
