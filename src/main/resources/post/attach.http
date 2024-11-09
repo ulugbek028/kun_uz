@@ -1,0 +1,25 @@
+### Upload image
+POST http://localhost:8081/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="cat_2.jpg"
+
+< C:\Users\ULUG`BEK SAMADOV\Desktop\spring_code\cat_2.jpg
+
+
+### Upload video
+
+POST http://localhost:8081/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="cat.jpg"
+
+< C:\Users\ULUG`BEK SAMADOV\Desktop\spring_code\cat.jpg
+
+### Open file
+GET http://localhost:8081/attach/open/a897878d-ff95-475f-8ca0-13bfd627ff31.jpg
+
+### Download file
+GET http://localhost:8081/attach/download/a897878d-ff95-475f-8ca0-13bfd627ff31.jpg

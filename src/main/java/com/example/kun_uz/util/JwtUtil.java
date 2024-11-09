@@ -1,6 +1,6 @@
 package com.example.kun_uz.util;
 
-import com.example.kun_uz.dto.JwtDTO;
+import com.example.kun_uz.Profile.dto.JwtDTO;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

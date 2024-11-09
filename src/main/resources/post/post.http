@@ -1,0 +1,33 @@
+### Post create
+POST localhost:8081/post
+Content-Type: application/json
+
+{
+  "title": "Yanigi pc oldim 2",
+  "content": "saSas asaKSH hs kAHS khsk",
+  "attachList": [
+    {"id": "a2b6738e-5e45-4065-b5b8-60b2338a5813.jpg"},
+    {"id": "16ad478c-97a0-4ce4-84bc-e751cd5a68d6.jpg"},
+    {"id": "f6e07cb7-7e50-4e8c-bee7-fb5b860c03e3.jpg"}
+  ]
+}
+
+### Get by id
+GET localhost:8081/post/5
+
+### Upate create
+POST localhost:8080/post
+Content-Type: application/json
+
+### Post create
+PUT localhost:8081/post/update/5
+Content-Type: application/json
+
+{
+  "title": "Yanigi komp",
+  "content": "saSas asaKSH hs kAHS ",
+  "attachList": [
+    {"id": "f6e07cb7-7e50-4e8c-bee7-fb5b860c03e3.jpg"},
+    {"id": "8ebd68ca-f780-4d43-8342-c9b0dccbe47f.jpg"}
+  ]
+}

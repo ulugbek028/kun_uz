@@ -1,9 +1,10 @@
 ### create
 POST localhost:8081/profile
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTiIsInN1YiI6Iis5OTg5OTA0MzA2NDAiLCJpYXQiOjE3MzAzNzEyNzAsImV4cCI6MTczMDQ1NzY3MH0.F3r6x_1NLeDlsuLyZMfEEa4l36JlimB7BF7-iUqQPXQ
 
 {
-  "name": "Ali",
+  "name": "Alijon",
   "surname": "Aliyev",
   "email": "alialiyev@gmail.com",
   "password": "alialiyev"
@@ -16,6 +17,7 @@ Content-Type: application/json
 ### update value (user)
 PUT localhost:8081/profile/update/alialiyev@gmail.com
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTiIsInN1YiI6Iis5OTg5OTA0MzA2NDAiLCJpYXQiOjE3MzAzNzA4MTAsImV4cCI6MTczMDQ1NzIxMH0.6P_0A47uD7b3SKTt97A1KAgWJXQ_aop7pKRlWxMWJXg
 
 {
   "name": "Vali",
@@ -34,18 +36,5 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwic3ViIjoiK
 
 
 
-
-#### create
-#POST localhost:8081/profile/registration
-#Content-Type: application/json
-#
-#{
-#  "name": "Ali",
-#  "surname": "Aliyev",
-#  "email": "ulugbeksamadov007@gmail.com",
-#  "password": "123456"
-#}
-
-###
 
 
