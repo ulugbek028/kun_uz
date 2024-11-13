@@ -1,6 +1,6 @@
 package com.example.kun_uz.Profile.entity;
 
-import com.example.kun_uz.Post.entity.AttachEntity;
+import com.example.kun_uz.Attach.entity.AttachEntity;
 import com.example.kun_uz.Enum.ProfileRole;
 import com.example.kun_uz.Enum.ProfileStatus;
 import jakarta.persistence.*;

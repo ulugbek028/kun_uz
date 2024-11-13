@@ -1,5 +1,6 @@
 package com.example.kun_uz.Post.dto;
 
+import com.example.kun_uz.Attach.dto.AttachDTO;
 import lombok.Getter;
 import lombok.Setter;
 import java.util.List;

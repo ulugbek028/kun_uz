@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface ProfileRepository extends JpaRepository<ProfileEntity, Integer> {
+public interface ProfileRepository extends CrudRepository<ProfileEntity, Integer> {
 
     Optional<ProfileEntity> findByEmailAndVisibleTrue(String email);
 

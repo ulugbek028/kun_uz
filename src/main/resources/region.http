@@ -3,7 +3,7 @@ POST localhost:8081/region
 Content-Type: application/json
 
 {
-  "order_number": 19,
+  "order_number": 2,
   "name_uz": "Navoiy",
   "name_en": "Navoi",
   "name_ru": "Навоий"

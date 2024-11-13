@@ -70,7 +70,11 @@ public class SpringSecurityConfig {
                     .requestMatchers("/attach/open/*").permitAll()
                     .requestMatchers("/attach/download/*").permitAll()
                     .requestMatchers("/post", "/post/**").permitAll()
-                    .requestMatchers("/profile").hasRole("ADMIN")
+                    .requestMatchers("/profile").permitAll()
+                    .requestMatchers("/article-type").permitAll()
+                    .requestMatchers("region").permitAll()
+                    .requestMatchers("/category").permitAll()
+                    .requestMatchers("/article/**").permitAll()
                     .anyRequest()
                     .authenticated();
 //        }).formLogin(Customizer.withDefaults());

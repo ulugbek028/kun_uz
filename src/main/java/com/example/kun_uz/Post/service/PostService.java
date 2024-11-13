@@ -1,6 +1,6 @@
 package com.example.kun_uz.Post.service;
 
-import com.example.kun_uz.Post.dto.AttachDTO;
+import com.example.kun_uz.Attach.dto.AttachDTO;
 import com.example.kun_uz.Post.dto.PostDTO;
 import com.example.kun_uz.Post.entity.PostEntity;
 import com.example.kun_uz.Post.repository.PostRepository;
