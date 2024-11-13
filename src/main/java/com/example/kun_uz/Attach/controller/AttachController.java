@@ -1,8 +1,8 @@
-package com.example.kun_uz.Post.controller;
+package com.example.kun_uz.Attach.controller;
 
 import com.example.kun_uz.ExceptionHandler.AppBadException;
-import com.example.kun_uz.Post.dto.AttachDTO;
-import com.example.kun_uz.Post.service.AttachService;
+import com.example.kun_uz.Attach.dto.AttachDTO;
+import com.example.kun_uz.Attach.service.AttachService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;

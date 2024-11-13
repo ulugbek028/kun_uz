@@ -1,6 +1,7 @@
 package com.example.kun_uz.Post.service;
 
-import com.example.kun_uz.Post.dto.AttachDTO;
+import com.example.kun_uz.Attach.dto.AttachDTO;
+import com.example.kun_uz.Attach.service.AttachService;
 import com.example.kun_uz.Post.entity.PostAttachEntity;
 import com.example.kun_uz.Post.repository.PostAttachRepository;
 import org.springframework.beans.factory.annotation.Autowired;

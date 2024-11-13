@@ -1,5 +1,6 @@
 package com.example.kun_uz.Post.entity;
 
+import com.example.kun_uz.Attach.entity.AttachEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

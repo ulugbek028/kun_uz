@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EmailSendingService {
-    @Value("${spring.mail.username}")
+   /* @Value("${spring.mail.username}")
     private String fromAccount;
     @Autowired
     private JavaMailSender javaMailSender;
@@ -42,5 +42,5 @@ public class EmailSendingService {
         }
 
         return "Mail was send";
-    }
+    }*/
 }

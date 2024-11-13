@@ -1,0 +1,27 @@
+### ArticleType create
+POST localhost:8081/article-type
+Content-Type: application/json
+
+{
+  "orderNumber": 2,
+  "nameUz": "Dolzarb",
+  "nameEn": "Actual",
+  "nameRu": "Dolzarp ru",
+  "name": "Dolzarb"
+}
+
+### ArticleType update
+POST localhost:8081/article-type
+Content-Type: application/json
+
+{
+  "orderNumber": 1,
+  "nameUz": "Dolzarbjon",
+  "nameEn": "Actual",
+  "nameRu": "Dolzarp ru"
+
+}
+
+### By lang
+GET localhost:8081/article-type/lang
+Accept-language: ru

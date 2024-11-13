@@ -30,13 +30,13 @@ Content-Type: application/json
   "name": "Ulug`bek"
 }
 
-### Confirm
+### SMS-Confirm
 POST localhost:8081/auth/registration/sms/confirm
 Content-Type: application/json
 
 {
   "phone": "+998990430640",
-  "code": "89942"
+  "code": "74320"
 }
 
 ### login

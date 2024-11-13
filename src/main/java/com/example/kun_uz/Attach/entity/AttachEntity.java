@@ -1,4 +1,4 @@
-package com.example.kun_uz.Post.entity;
+package com.example.kun_uz.Attach.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

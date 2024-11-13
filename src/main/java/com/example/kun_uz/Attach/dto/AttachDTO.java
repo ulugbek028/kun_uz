@@ -1,4 +1,4 @@
-package com.example.kun_uz.Post.dto;
+package com.example.kun_uz.Attach.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;

@@ -3,7 +3,7 @@ POST localhost:8081/category
 Content-Type: application/json
 
 {
-  "order_number": 2,
+  "order_number": 1,
   "name_uz": "O`zbekiston2",
   "name_en": "Uzbekistan",
   "name_ru": "ЎЗБЕКИСТОН"

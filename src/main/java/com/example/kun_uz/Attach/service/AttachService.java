@@ -1,9 +1,9 @@
-package com.example.kun_uz.Post.service;
+package com.example.kun_uz.Attach.service;
 
-import com.example.kun_uz.Post.dto.AttachDTO;
-import com.example.kun_uz.Post.entity.AttachEntity;
+import com.example.kun_uz.Attach.dto.AttachDTO;
+import com.example.kun_uz.Attach.entity.AttachEntity;
 import com.example.kun_uz.exp.AppBadRequestException;
-import com.example.kun_uz.Post.repository.AttachRepository;
+import com.example.kun_uz.Attach.repository.AttachRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;

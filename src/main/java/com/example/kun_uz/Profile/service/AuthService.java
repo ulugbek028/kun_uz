@@ -1,6 +1,6 @@
 package com.example.kun_uz.Profile.service;
 
-import com.example.kun_uz.Post.service.AttachService;
+import com.example.kun_uz.Attach.service.AttachService;
 import com.example.kun_uz.Enum.ProfileRole;
 import com.example.kun_uz.Enum.ProfileStatus;
 import com.example.kun_uz.ExceptionHandler.AppBadException;
@@ -13,6 +13,7 @@ import com.example.kun_uz.Profile.entity.ProfileEntity;
 import com.example.kun_uz.Profile.entity.SmsHistoryEntity;
 import com.example.kun_uz.Profile.repository.ProfileRepository;
 import com.example.kun_uz.Profile.repository.SmsHistoryRepository;
+import com.example.kun_uz.exp.AppBadRequestException;
 import com.example.kun_uz.util.JwtUtil;
 import com.example.kun_uz.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -144,10 +145,13 @@ public class AuthService {
                 CustomUserDetails profile = (CustomUserDetails) authentication.getPrincipal();
 
                 ProfileDTO profileDTO = new ProfileDTO();
+                profileDTO.setId(profile.getId());
                 profileDTO.setName(profile.getName());
                 profileDTO.setSurname(profile.getSurname());
                 profileDTO.setEmail(profile.getEmail());
                 profileDTO.setRole(profile.getRole());
+                profileDTO.setPassword(profile.getPassword());
+                profileDTO.setStatus(profile.getStatus());
                 profileDTO.setJwtToken(JwtUtil.encode(profile.getEmail(), profile.getRole().toString()));
 //                profileDTO.setPhotoId(attachService.getDTO());
 
