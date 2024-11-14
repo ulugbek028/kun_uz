@@ -4,6 +4,7 @@ import com.example.kun_uz.Article.dto.ArticleDTO;
 import com.example.kun_uz.Article.dto.ArticleShortInfo;
 import com.example.kun_uz.Article.entity.ArticleEntity;
 import com.example.kun_uz.Article.repository.ArticleRepository;
+import com.example.kun_uz.Article.repository.ArticleViewRecordRepository;
 import com.example.kun_uz.Attach.service.AttachService;
 import com.example.kun_uz.Enum.ArticleStatus;
 import com.example.kun_uz.Profile.dto.JwtDTO;
@@ -32,6 +33,8 @@ public class ArticleService {
     private final ArticleRepository articleRepository;
     private final ArticleTypesService articleTypesService;
     private final AttachService attachService;
+    private final ArticleViewRecordRepository articleViewRecordRepository;
+    private final ArticleViewRecordService articleViewRecordService;
     @Autowired
     private ProfileService profileService;
 
@@ -135,6 +138,22 @@ public class ArticleService {
         dto.setPublishedDate(mapper.getPublishDate());
         dto.setImage(attachService.getDTO(mapper.getImageId()));
         return dto;
+    }
+
+    public ArticleDTO getById(String id, String ip) {
+        // get by id
+        Optional<ArticleEntity> entity = articleRepository.findById(id);
+        ArticleEntity articleEntity = entity.get();
+
+        increaseViewCount(id, ip);
+        articleViewRecordService.increaseViewCount(id, ip);
+        return null;
+    }
+
+    public void increaseViewCount(String id, String ip) {
+        if (articleViewRecordService.increaseViewCount(id, ip)) {
+            articleRepository.updateViewCount(id);
+        }
     }
 
 

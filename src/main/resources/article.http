@@ -1,5 +1,5 @@
 ### create
-POST localhost:8081/article/
+POST localhost:8081/article
 Content-Type: application/json
 Authorization: Bearer
 
@@ -17,4 +17,4 @@ Authorization: Bearer
 }
 
 ### update article
-GET localhost:8081
+GET localhost:8081/article/get5

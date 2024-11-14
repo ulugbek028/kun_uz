@@ -3,8 +3,10 @@ package com.example.kun_uz.Article.repository;
 import com.example.kun_uz.Article.entity.ArticleEntity;
 import com.example.kun_uz.Enum.ArticleStatus;
 import com.example.kun_uz.mapper.ArticleShortInfoMapper;
+import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
@@ -14,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface ArticleRepository extends CrudRepository<ArticleEntity, String>, PagingAndSortingRepository<ArticleEntity,String> {
+public interface ArticleRepository extends CrudRepository<ArticleEntity, String>, PagingAndSortingRepository<ArticleEntity, String> {
 
     Optional<ArticleEntity> findById(String id);
 
@@ -27,4 +29,11 @@ public interface ArticleRepository extends CrudRepository<ArticleEntity, String>
 
     @Query(" From ArticleEntity a where a.regionId = ?1  ")
     Page<ArticleEntity> getRegion(Integer id, Pageable pageable);
+
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE ArticleEntity a SET a.viewCount = COALESCE(a.viewCount, 0) + 1 WHERE a.id = ?1")
+    void updateViewCount(String id);
+
 }

@@ -75,6 +75,7 @@ public class SpringSecurityConfig {
                     .requestMatchers("region").permitAll()
                     .requestMatchers("/category").permitAll()
                     .requestMatchers("/article/**").permitAll()
+                    .requestMatchers("/comment/**").permitAll()
                     .anyRequest()
                     .authenticated();
 //        }).formLogin(Customizer.withDefaults());
